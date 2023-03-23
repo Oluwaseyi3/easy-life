@@ -13,6 +13,9 @@ function fadeIn(target, vars) {
 const Hero = () => {
   const boxRef = useRef();
   const redRef = useRef();
+  const imgRef = useRef();
+  const circleRef = useRef();
+
 
   useLayoutEffect(() => {
     // Refs allow you to access DOM nodes
@@ -21,6 +24,8 @@ const Hero = () => {
     
     gsap.from(boxRef.current, {opacity: 0, y: 200, duration: 1});
     gsap.from(redRef.current, {opacity: 0, y: 100, duration: 2});
+    gsap.from(imgRef.current, {opacity: 0, x: 100, duration: 2});
+    gsap.from(circleRef.current, {opacity: 0, x: 100, duration: 2});
   });
 
   return (
@@ -36,7 +41,7 @@ const Hero = () => {
                           
                         </h1>
                         <div className='ss:flex hidden md:mr-4 mr-0'>
-                            <GetStarted/>
+                            <GetStarted circle={circleRef}/>
                         </div>
                     </div>
               </div>

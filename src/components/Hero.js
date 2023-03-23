@@ -12,13 +12,15 @@ function fadeIn(target, vars) {
 
 const Hero = () => {
   const boxRef = useRef();
+  const redRef = useRef();
 
   useLayoutEffect(() => {
     // Refs allow you to access DOM nodes
     console.log(boxRef) // { current: div.box }
     // then we can animate them like so...
     
-    gsap.from(boxRef.current, {opacity: 0, y: 100, duration: 1});
+    gsap.from(boxRef.current, {opacity: 0, y: 200, duration: 1});
+    gsap.to(redRef.current, {opacity: 0, y: 100, duration: 2});
   });
 
   return (
@@ -38,7 +40,7 @@ const Hero = () => {
                         </div>
                     </div>
               </div>
-              <h1 className='font-poppins ml-3 font-semibold ss:text-[72px] text-[52px] text-black ss:leading-[100px] leading-[75px] w-full'>
+              <h1 ref={redRef} className='font-poppins ml-3 font-semibold ss:text-[72px] text-[52px] text-black ss:leading-[100px] leading-[75px] w-full'>
               Society
 </h1>
 

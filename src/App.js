@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styles from './style'
-
+// import "./App.css"
 import {  Hero, Navbar, Billing, Business, Buttons, Footer, Stats, Testimonials, CardDeal, FeedbackCard, GetStarted, Clients} from "./components"
 
 
+
 const App = () => {
+
+
+      
+
   return (
     <div  className='bg-primary w-full overflow-hidden'>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>

@@ -22,6 +22,8 @@ const GetStarted = () => {
                    
                   </p>
         </div>
+
+ 
     </div>
   )
 }

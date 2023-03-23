@@ -40,21 +40,7 @@ export const features = [
     title: "Group Financing  (Rotational Savings)",
     content:
       "Members get to pull funds together weekly or monthly to achieve individual or collective projects, this pool of funds range from 100,000 weekly up to 10 Million Naira monthly. Members can access a community of choice for interaction and collective planning.",
-  },
-  {
-    id: "feature-4",
-    icon: send,
-    title: "	Collateral-Free Business Loans (Credits)",
-    content:
-      "You can access Loan Facilities for 6 Months or 1 year, with a super affordable interest rate. Members can only access this after faithfully saving for over 6 Months.",
-  },
-  {
-    id: "feature-5",
-    icon: send,
-    title: "Investments",
-    content:
-      "Members or Customers can invest with the Cooperative Society or highlighted businesses and get a very juicy return on investment yearly, contact support of for further details.",
-  },
+  }
 ];
 
 export const feedback = [

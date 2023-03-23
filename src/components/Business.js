@@ -2,12 +2,23 @@ import React from 'react'
 import {features} from "../constants"
 import styles, {layout} from '../style'
 import Buttons from './Buttons'
+import {gsap, Elastic, Expo} from "gsap"
 
+
+const onEnter = ({ currentTarget }) => {
+  gsap.to(currentTarget, {  scale: 1.2 });
+};
+
+const onLeave = ({ currentTarget }) => {
+  gsap.to(currentTarget, {  scale: 1 });
+};
 
 const FeatureCard = ({icon, title, content, index}) => {
+
+
   return(
    <div>
-    <div className={`flex flex-row p-6 rounded-[20px] ${index!== features.length - 1 ? "mb-6" : "mb-0"} featured-card`}>
+    <div className={`flex flex-row p-6 rounded-[20px] ${index!== features.length - 1 ? "mb-6" : "mb-0"} featured-card`} onMouseEnter={onEnter} onMouseLeave={onLeave}>
        <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
        <img src={icon} alt="" className='w-[50%] h-[50%] object-contain'  />
  </div>
@@ -42,20 +53,7 @@ At Easylife Cooperative Society, we have a mandate to help entrepreneurs build a
               
               <Buttons styles="mt-10 mb-7"/>
 
-              <h2 className={styles.heading2}>
-	
-              Our Mission….
-
-
-              </h2>
-
-              <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-           
-We will empower our members to take bold steps to engage their future so as to build and deliver extraordinary Socio-economic Values that will provide prosperity and fight poverty and ultimately transform the Socio-economic and Socio-political consciousness in our country Nigeria.
-
-
-              </p>
-
+             
               
 
 

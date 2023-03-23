@@ -20,7 +20,7 @@ const Hero = () => {
     // then we can animate them like so...
     
     gsap.from(boxRef.current, {opacity: 0, y: 200, duration: 1});
-    gsap.to(redRef.current, {opacity: 0, y: 100, duration: 2});
+    gsap.from(redRef.current, {opacity: 0, y: 100, duration: 2});
   });
 
   return (

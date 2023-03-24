@@ -15,6 +15,7 @@ const Hero = () => {
   const redRef = useRef();
   const imgRef = useRef();
   const circleRef = useRef();
+  const subTextRef = useRef()
 
 
   useLayoutEffect(() => {
@@ -26,6 +27,7 @@ const Hero = () => {
     gsap.from(redRef.current, {opacity: 0, y: 100, duration: 2});
     gsap.from(imgRef.current, {opacity: 0, x: 100, duration: 2});
     gsap.from(circleRef.current, {opacity: 0, x: 100, duration: 2});
+    gsap.from(subTextRef.current, {opacity: 0, x: 100, duration: 2});
   });
 
   return (
@@ -49,11 +51,11 @@ const Hero = () => {
               Society
 </h1>
 
-              <h1 className= "max-w-[470px] mt-5 text-black font-poppins font-semibold">
+              <h1 className= "max-w-[470px] mt-5 text-black font-poppins font-semibold" ref={subTextRef}>
                A new way to Save, Invest, Loan & Grow your Business
               </h1>
         </div>
-        <div>
+        <div ref={imgRef}>
           <img src={society} alt="image"  className='w-[100%] h-[100%] relative z-[5]'/>
         </div>
     </section>

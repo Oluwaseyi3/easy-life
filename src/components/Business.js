@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useRef, useEffect}from 'react'
 import {features} from "../constants"
 import styles, {layout} from '../style'
 import Buttons from './Buttons'
 import {gsap, Elastic, Expo} from "gsap"
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const onEnter = ({ currentTarget }) => {
   gsap.to(currentTarget, {  scale: 1.2 });
@@ -14,6 +16,8 @@ const onLeave = ({ currentTarget }) => {
 };
 
 const FeatureCard = ({icon, title, content, index}) => {
+
+
 
 
   return(
@@ -35,9 +39,51 @@ const FeatureCard = ({icon, title, content, index}) => {
 )}
 
 const Business = () => {
+  const cardRef = useRef()
+  const featureRef = useRef()
+  useEffect(() => {
+    const el = cardRef.current;
+    const elFeature = featureRef.current;
+    gsap.from(
+      el,
+      
+      {
+        opacity: 0, y: 100, duration: 1,
+     
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+
+    gsap.from(
+      elFeature,
+      
+      {
+        opacity: 0, x: 100, duration: 1.5,
+     
+        scrollTrigger: {
+          trigger: elFeature,
+        },
+      }
+    );
+  }, []);
+
+  // useLayoutEffect(() => {
+  //   // Refs allow you to access DOM nodes
+  //   console.log(cardRef) // { current: div.box }
+  //   // then we can animate them like so...
+    
+
+ 
+  //   gsap.from(cardRef.current, {
+  //     scrollTrigger: cardRef, // start the animation when ".box" enters the viewport (once)
+  //     opacity: 0, y: 500, duration: 2
+  //   });
+  // });
   return ( 
     <section id='features' className={layout.section}>
-          <div className={layout.sectionInfo}>
+          <div className={layout.sectionInfo} ref={cardRef}>
               <h2 className={styles.heading2}>
 Who we are…
               </h2>
@@ -59,7 +105,7 @@ At Easylife Cooperative Society, we have a mandate to help entrepreneurs build a
 
           </div>
 
-          <div className={`${layout.sectionImg} flex-col`}>
+          <div className={`${layout.sectionImg} flex-col`} ref={featureRef}>
               {
                 features.map((feature, index) => (
                   <FeatureCard key={feature.id} {...feature} index={index} />

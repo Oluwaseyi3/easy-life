@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import Buttons from "./Buttons"
 import styles from '../style'
 

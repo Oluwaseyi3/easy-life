@@ -1,4 +1,4 @@
-import React , {useEffect, useRef}from 'react'
+import React , {useLayoutEffect, useRef}from 'react'
 import {agent, woman} from "../assets"
 import styles, {layout} from '../style'
 import {gsap, Elastic, Expo} from "gsap"
@@ -10,7 +10,7 @@ const Stats = () => {
   const cards3Ref = useRef()
 
   
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = cardsRef.current;
     const el2 = cards2Ref.current;
     const el3 = cards3Ref.current;

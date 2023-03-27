@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useLayoutEffect} from 'react'
 import {gsap, Elastic, Expo} from "gsap"
 
 
@@ -9,7 +9,7 @@ const FeedbackCard = ({content, name, title , img}) => {
   const cards2Ref = useRef()
   const cards3Ref = useRef()
  
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = cardsRef.current;
     const el2 = cards2Ref.current;
     const el3 = cards3Ref.current;

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useLayoutEffect, useRef} from 'react'
 import {apple, bill, google, agent} from "../assets"
 import styles , {layout} from "../style"
 import {gsap} from "gsap"
@@ -9,7 +9,7 @@ const Billing = () => {
   const billTextRef = useRef()
   const billImageRef = useRef()
 
-  useEffect(() => {
+  useLayoutEffect(() => {
 
     
     const elBillText = billTextRef.current;

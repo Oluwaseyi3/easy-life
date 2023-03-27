@@ -51,9 +51,9 @@ const Hero = () => {
               Society
 </h1>
 
-              <h1 className= "max-w-[470px] mt-5 text-black font-poppins font-semibold" ref={subTextRef}>
+              <p className= "max-w-[470px] mt-5 text-black font-poppins " ref={subTextRef}>
                A new way to Save, Invest, Loan & Grow your Business
-              </h1>
+              </p>
         </div>
         <div ref={imgRef}>
           <img src={society} alt="image"  className='w-[100%] h-[100%] relative z-[5]'/>

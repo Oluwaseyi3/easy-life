@@ -88,9 +88,7 @@ const Business = () => {
 Who we are…
               </h2>
               <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              Easylife ventures cooperative society are a team of enthusiastic Entrepreneurs and Business people who understand the value of partnership and networking.
-
-
+              Easylife ventures cooperative society has a mandate to help entrepreneurs build a strong culture of saving while providing access to loans that will promote personal and collective socio-economic growth and development. 
 
               </p>
 

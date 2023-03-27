@@ -39,7 +39,7 @@ export const features = [
     icon: send,
     title: "Group Financing  (Rotational Savings)",
     content:
-      "Members get to pull funds together weekly or monthly to achieve individual or collective projects, this pool of funds range from 100,000 weekly up to 10 Million Naira monthly. Members can access a community of choice for interaction and collective planning.",
+      " Members get to pull funds together weekly or monthly to achieve individual or collective projects",
   }
 ];
 
@@ -47,8 +47,8 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
+      "Group Financing (Rotational Savings)",
+    name: "Members get to pull funds together weekly or monthly to achieve individual or collective projects.",
     title: "Founder & Leader",
     img: people01,
   },
@@ -56,15 +56,15 @@ export const feedback = [
     id: "feedback-2",
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
+    name: "	Collateral-Free Business Loans (Credits) ",
     title: "Founder & Leader",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
+      "Investments",
+    name: "Members or Customers can invest with the Cooperative Society or highlighted businesses and get a very juicy return on investment yearly.",
     title: "Founder & Leader",
     img: people03,
   },

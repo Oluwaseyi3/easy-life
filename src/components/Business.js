@@ -1,4 +1,4 @@
-import React, {useRef, useEffect}from 'react'
+import React, {useRef, useEffect} from 'react'
 import {features} from "../constants"
 import styles, {layout} from '../style'
 import Buttons from './Buttons'
@@ -90,8 +90,7 @@ Who we are…
               <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
               Easylife ventures cooperative society are a team of enthusiastic Entrepreneurs and Business people who understand the value of partnership and networking.
 
-At Easylife Cooperative Society, we have a mandate to help entrepreneurs build a strong culture of saving while providing access to funds that will promote personal and collective socio-economic growth and development. 
-(Learn more - links to about us page)
+
 
               </p>
 

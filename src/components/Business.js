@@ -38,49 +38,8 @@ const FeatureCard = ({icon, title, content, index}) => {
    </div>
 )}
 
-const Business = () => {
-  const cardRef = useRef()
-  const featureRef = useRef()
-  useEffect(() => {
-    const el = cardRef.current;
-    const elFeature = featureRef.current;
-    gsap.from(
-      el,
-      
-      {
-        opacity: 0, y: 100, duration: 1,
-     
-        scrollTrigger: {
-          trigger: el,
-        },
-      }
-    );
+const Business = ({cardRef, featureRef}) => {
 
-    gsap.from(
-      elFeature,
-      
-      {
-        opacity: 0, x: 100, duration: 1.5,
-     
-        scrollTrigger: {
-          trigger: elFeature,
-        },
-      }
-    );
-  }, []);
-
-  // useLayoutEffect(() => {
-  //   // Refs allow you to access DOM nodes
-  //   console.log(cardRef) // { current: div.box }
-  //   // then we can animate them like so...
-    
-
- 
-  //   gsap.from(cardRef.current, {
-  //     scrollTrigger: cardRef, // start the animation when ".box" enters the viewport (once)
-  //     opacity: 0, y: 500, duration: 2
-  //   });
-  // });
   return ( 
     <section id='features' className={layout.section}>
           <div className={layout.sectionInfo} ref={cardRef}>

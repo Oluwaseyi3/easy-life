@@ -1,34 +1,16 @@
 import React from 'react'
 import styles from '../style'
 import { useEffect, useRef, useLayoutEffect } from 'react'
-import {gsap, Elastic, Expo} from "gsap"
+
 import { discount, robot, society } from '../assets'
 import GetStarted from './GetStarted'
 
 
-function fadeIn(target, vars) {
-  return gsap.from(target, { opacity: 0, ...vars });
-}
+// function fadeIn(target, vars) {
+//   return gsap.from(target, { opacity: 0, ...vars });
+// }
 
-const Hero = () => {
-  const boxRef = useRef();
-  const redRef = useRef();
-  const imgRef = useRef();
-  const circleRef = useRef();
-  const subTextRef = useRef()
-
-
-  useLayoutEffect(() => {
-    // Refs allow you to access DOM nodes
-    console.log(boxRef) // { current: div.box }
-    // then we can animate them like so...
-    
-    gsap.from(boxRef.current, {opacity: 0, y: 200, duration: 1});
-    gsap.from(redRef.current, {opacity: 0, y: 100, duration: 2});
-    gsap.from(imgRef.current, {opacity: 0, x: 100, duration: 2});
-    gsap.from(circleRef.current, {opacity: 0, x: 100, duration: 2});
-    gsap.from(subTextRef.current, {opacity: 0, x: 100, duration: 2});
-  });
+const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
 
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>

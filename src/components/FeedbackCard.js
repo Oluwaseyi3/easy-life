@@ -3,53 +3,9 @@ import {gsap, Elastic, Expo} from "gsap"
 
 
 
-const FeedbackCard = ({content, name, title , img}) => {
+const FeedbackCard = ({content, name, title , img, cardsRef1, cards2Ref2, cards3Ref3}) => {
 
-  const cardsRef1 = useRef()
-  const cards2Ref2 = useRef()
-  const cards3Ref3 = useRef()
  
-  useLayoutEffect(() => {
-    const el = cardsRef1.current;
-    const el2 = cards2Ref2.current;
-    const el3 = cards3Ref3.current;
-
-    gsap.from(
-      el,
-      
-      {
-        opacity: 0, y: 100, duration: 1,
-     
-        scrollTrigger: {
-          trigger: el,
-        },
-      }
-    );
-
-    gsap.from(
-      el2,
-      
-      {
-        opacity: 0, x: 100, duration: 1.5,
-     
-        scrollTrigger: {
-          trigger:   el2,
-        },
-      }
-    );
-
-    gsap.from(
-      el3,
-      
-      {
-        opacity: 0, x: 100, duration: 2,
-     
-        scrollTrigger: {
-          trigger: el3,
-        },
-      }
-    );
-  }, []);
   return (
     <div className='flex  bg-red-50 justify-between flex-col rounded border-1   px-10 py-12 rounded-[20px] max-w-[370px] min-h-[300px] md: mr-10 sm:mr-5
     mr-0 my-5 

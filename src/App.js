@@ -168,7 +168,7 @@ const App = () => {
     <div className={` ${styles.boxWidth}`}>
       
         <Business cardRef={cardRef} featureRef={featureRef} />
-        <Billing/>
+        {/* <Billing/> */}
      
         <Testimonials cardsRef1={cardsRef1} cards2Ref2={cards2Ref2} cards3Ref3={cards3Ref3}/>
         {/* <Stats/> */}

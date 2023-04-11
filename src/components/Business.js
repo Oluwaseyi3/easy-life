@@ -3,6 +3,8 @@ import {features} from "../constants"
 import styles, {layout} from '../style'
 import Buttons from './Buttons'
 import {gsap, Elastic, Expo} from "gsap"
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,36 +41,35 @@ const FeatureCard = ({icon, title, content, index}) => {
 )}
 
 const Business = ({cardRef, featureRef}) => {
-
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
   return ( 
     <section id='features' className={layout.section}>
           <div className={layout.sectionInfo} ref={cardRef}>
               <h2 className={styles.heading2}>
-Who we are…
+            Our Vision
               </h2>
               <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              Easylife ventures cooperative society has a mandate to help entrepreneurs build a strong culture of saving while providing access to loans that will promote personal and collective socio-economic growth and development. 
+              We will empower our members to take bold steps to engage their future so as to build and deliver extraordinary Socio-economic Values that will provide prosperity and fight poverty and ultimately transform the Socio-economic and Socio-political consciousness in our country Nigeria.
 
               </p>
 
+          </div>  
+          {
+            !matches &&
+            
+          <div className={layout.sectionInfo} ref={cardRef}>
+          <h2 className={styles.heading2}>
+          Our  mission
+          </h2>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          We will empower our members to take bold steps to engage their future so as to build and deliver extraordinary Socio-economic Values that will provide prosperity and fight poverty and ultimately transform the Socio-economic and Socio-political consciousness in our country Nigeria.
 
-              
-              <Buttons styles="mt-10 mb-7"/>
+          </p>
 
-             
-              
+      </div>
+          }
 
-
-          </div>
-
-          <div className={`${layout.sectionImg} flex-col`} ref={featureRef}>
-              {
-                features.map((feature, index) => (
-                  <FeatureCard key={feature.id} {...feature} index={index} />
-                ))
-              }
-          </div>
-          <div className="absolute z-[0] w-[60%] h-[60%] -left-[50%] rounded-full blue__gradient"/>
     </section>
   )
 }

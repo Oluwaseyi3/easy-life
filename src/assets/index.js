@@ -27,15 +27,34 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import society from "./society.jpg"
 import woman from "./woman.jpg"
-
+import People from "./People.png"
+import coopimage from "./coopimage.png"
+import coopimage2 from "./coopimage2.png"
+import coopmoney from "./coopmoney.png"
+import group1 from "./group1.png"
+import group2 from "./group2.png"
+import Frame from "./Frame.png"
+import Frame4 from "./Frame4.png"
+import Frame2 from "./Frame2.png"
+import Frame3 from "./Frame3.png"
 export {
   airbnb,
+  Frame,
+  Frame4,
+  Frame2,
+  Frame3,
+  group1,
+  group2,
   bill,
+  coopmoney,
   woman,
+  coopimage,
+  coopimage2,
   agent,
   binance,
   society,
   card,
+  People,
   easylifelogo,
   coinbase,
   dropbox,

@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, Frame, Frame2, Frame3, Frame4, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -22,24 +22,31 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Regular Savings Account",
+    icon: Frame,
+    title: " Regular Savings Account",
     content:
-      "You can save daily, weekly or monthly and have access to it as soon as you desire.",
+      "Members can save daily, weekly or monthly",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "Locked Savings Account",
+    icon: Frame2,
+    title: " Locked Savings Account",
     content:
-      "Members can lock their savings for 6 months or 1 year, it accrues an interest of 3% and 6% Respectively.",
+      "Members can lock their savings for 6 months or 1 year.",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Group Financing  (Rotational Savings)",
+    icon: Frame3,
+    title: " Group Financing (Rotational Savings)",
     content:
       " Members get to pull funds together weekly or monthly to achieve individual or collective projects",
+  },
+  {
+    id: "feature-3",
+    icon: Frame4,
+    title: "Collateral-Free Business Loans (Credits)",
+    content:
+      " You can access Loan Facilities for 6 Months or 1 year, with a super affordable interest rate.",
   }
 ];
 

@@ -11,7 +11,7 @@ const FeedbackCard = ({content, name, title , icon, cardsRef1, cards2Ref2, cards
     mr-0 my-5 
     '>
        <img  src={icon} alt={name} className="w-[48px] h-[48px] rounded-full"/> 
-      <p className='font-poppins min-h-[5vh] text-start font-semibold  font-normal text-[18px] leading-[32px] text-black my-10 ' ref={cardsRef1}>
+      <p className='font-poppins min-h-[5vh] text-start font-semibold  font-normal text-[18px] leading-[32px] text-black my-5 ' ref={cardsRef1}>
         {title}
       </p>
      

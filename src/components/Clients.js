@@ -1,22 +1,36 @@
-import React, {useLayoutEffect} from 'react'
+import React from 'react'
 import Buttons from "./Buttons"
-import styles from '../style'
+import smile from "../assets/smile.png"
+import  {layout} from '../style'
 
-
-const Clients = () => {
+const Clients = ({cardsRefa, cards2Refb, cards3Refc}) => {
   return (
-    <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding}  rounded border-2 border-black sm:flex-row flex-col max-h-[470px] rounded-[20px] box-shadow`}>
-    <div className="flex-1 flex flex-col">
-      <h2 className={styles.heading2}>Join Our Community Today!</h2>
-      {/* <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-       Join the biggest Cooperative society   Join the biggest Cooperative society 
-      </p> */}
-    </div>
+    <section id="product" className={layout.sectionReverse}>
+    <div className={layout.sectionInfo} >
+  <img ref={cards3Refc} src={smile} alt="billing" className='w-[100%] min-h-[450px] relative z-[5] '/>
+  </div>
 
-    <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
-      <Buttons />
-    </div>
-  </section>
+  
+  <div className={layout.sectionImgReverse}>
+  <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-10 '>
+     <div className='w-[100%] min-h-[350px] flex flex-col justify-between sm:min-h-[300px]'>
+     <div>
+       <h1 className=' sm:text-[40px] text-[25px] font-semibold '>Get the best returns on your investments</h1>
+     </div>
+     <div>
+       <p>Members or Customers can invest with the Cooperative Society or highlighted businesses and get a very juicy return on investment yearly</p>
+     </div>
+     <div>
+    <Buttons title="Get Started"/>
+     </div>
+     </div>
+  </div>
+  </div>
+  
+
+
+ 
+</section>
    
   )
 }

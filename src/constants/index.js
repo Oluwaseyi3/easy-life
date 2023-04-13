@@ -19,6 +19,15 @@ export const navLinks = [
   },
 ];
 
+export const accordionData = [
+  {
+    id: "feature-1",
+    title: " Regular Savings Account",
+    content:
+      "Members can save daily, weekly or monthly",
+  }
+]
+
 export const features = [
   {
     id: "feature-1",
@@ -42,7 +51,7 @@ export const features = [
       " Members get to pull funds together weekly or monthly to achieve individual or collective projects",
   },
   {
-    id: "feature-3",
+    id: "feature-4",
     icon: Frame4,
     title: "Collateral-Free Business Loans (Credits)",
     content:

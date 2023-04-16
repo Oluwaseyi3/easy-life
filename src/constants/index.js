@@ -59,6 +59,39 @@ export const features = [
   }
 ];
 
+
+
+export const accordions = [
+  {
+    id: "feature-1",
+    icon: Frame,
+    title: " Regular Savings Account",
+    content:
+      "Members can save daily, weekly or monthly",
+  },
+  {
+    id: "feature-2",
+    icon: Frame2,
+    title: " Locked Savings Account",
+    content:
+      "Members can lock their savings for 6 months or 1 year.",
+  },
+  {
+    id: "feature-3",
+    icon: Frame3,
+    title: " Group Financing (Rotational Savings)",
+    content:
+      " Members get to pull funds together weekly or monthly to achieve individual or collective projects",
+  },
+  {
+    id: "feature-4",
+    icon: Frame4,
+    title: "Collateral-Free Business Loans (Credits)",
+    content:
+      " You can access Loan Facilities for 6 Months or 1 year, with a super affordable interest rate.",
+  }
+];
+
 export const feedback = [
   {
     id: "feedback-1",

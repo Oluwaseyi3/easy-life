@@ -7,6 +7,7 @@ import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.svg";
 import quotes from "./quotes.svg";
+import joy from "./joy.jpg"
 import robot from "./robot.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
@@ -63,6 +64,7 @@ export {
   robot,
   send,
   shield,
+  joy,
   star,
   menu,
   close,

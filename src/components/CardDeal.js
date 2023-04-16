@@ -1,12 +1,18 @@
-import * as React from 'react';
-import { features } from '../constants';
+import React, {useState} from 'react';
+import { accordions } from '../constants';
 import AccordionItem from './AccordionItem';
 import  {layout} from '../style'
 import Buttons from './Buttons';
 
 const CardDeal = () => {
+  const [open, setOpen] =useState(false)
 
-  const [expanded, setExpanded] = React.useState('panel1');
+  const toggle = (index) => {
+    if (open===index) {
+        return setOpen(null)
+    }
+    setOpen(index)
+}
 
   return (
     
@@ -34,8 +40,14 @@ We got you.</h1>
       <div className='w-[100%] min-h-[350px] flex flex-col gap-5 justify-start  sm:min-h-[200px]'>
 
     {
-           features.map((feature, index)=> {
-             return <AccordionItem/>
+           accordions.map((accordion, index)=> {
+             return <AccordionItem
+                key={index}
+                open={index === open}
+                title={accordion.title}
+                content={accordion.content}
+                toggle={() => toggle(index)}
+             />
           })
        }
   </div>

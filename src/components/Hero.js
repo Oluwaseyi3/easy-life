@@ -17,7 +17,7 @@ const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
     <section id="home" className={`flex md:flex-row flex-col `}>
         <div className={`flex-1 ${styles.flexStart} flex-col xl:px:0 sm:px-16 px-6`}>
               <div className='flex flex-col items-start gap-5 py-[10px]  bg-primary rounded-[10px] mb-2'>
-                    <div  className=' box flex flex-row justify-between items center w-full' >
+                    <div  className={`box flex flex-row justify-between items center w-full`} >
                         <h1 ref={boxRef} className='  flex-1 leading-[90px] font-poppins font-semibold ss:text-[62px] text-[42px] text-black leading-[75px]'>
                         The new age<br />
                         co-operative <br/>

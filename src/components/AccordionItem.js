@@ -9,8 +9,8 @@ const AccordionItem = ({open, toggle, title, content}) => {
  
   return (
     <div className='pt-[10px]'>
-         <div className='bg-white py-[25px] px-[50px] flex justify-between items-center cursor-pointer' onClick={toggle}>
-            <p className='text-[22px] font-semibold'>
+         <div className=' bg-white py-[25px] px-[50px] flex justify-between items-center cursor-pointer' onClick={toggle}>
+            <p className='text-[14px] md:text-[22px] font-semibold'>
                 {title}
             </p>
             <div className='text-[30px]'>

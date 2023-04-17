@@ -39,8 +39,10 @@ import Frame4 from "./Frame4.png"
 import Frame2 from "./Frame2.png"
 import Frame3 from "./Frame3.png"
 import mask from "./mask.png"
+import market from "./market.png"
 export {
   airbnb,
+  market,
   Frame,
   mask,
   Frame4,

@@ -6,7 +6,7 @@ import Home from './Home'
 import { RouterProvider } from 'react-router';
 import About from "./About"
 import Member from './Member';
-import { Navbar } from './components';
+import { Footer, Navbar } from './components';
 const App = () => {
  
   const router = createBrowserRouter(
@@ -28,7 +28,9 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
              <Navbar />
              <RouterProvider router={router}/>
+             <Footer/>
         </div>
+
     </div>
 
    </div>

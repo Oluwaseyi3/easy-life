@@ -1,21 +1,26 @@
 import { people01, people02, Frame, Frame2, Frame3, Frame4, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+// import { GrServices } from 'react-icons/gr'
+// import { GiTemporaryShield } from 'react-icons/gi'
+// import { AiOutlineHome } from 'react-icons/ai'
+// import { MdOutlineRememberMe } from 'react-icons/md'
 
 export const navLinks = [
   {
-    id: "home",
+    id: "/",
     title: "Home",
+  
   },
   {
-    id: "features",
-    title: "Features",
+    id: "about",
+    title: "About Us",
   },
   {
     id: "product",
     title: "Product",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "membership",
+    title: "Membership",
   },
 ];
 

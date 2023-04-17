@@ -167,7 +167,7 @@ useLayoutEffect(() => {
         <Stats cardsRefa={cardsRefa} cards2Refb={cards2Refb} cards3Refc={cards3Refc}/>
         <Clients/>
         <CardDeal/>
-        <Footer/>
+
        
 
     </div>

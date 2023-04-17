@@ -1,42 +1,48 @@
 import React, {useState} from 'react'
-import {close, menu, easylifelogo} from "../assets"
+import {close, logo, menu, easylifelogo} from "../assets"
 import {navLinks} from "../constants"
-
+import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
-    <nav className='flex justify-between items-center w-[92%] mx-auto h-[15vh]'>
-       <div>
-       <img src={easylifelogo} className="w-[30%] md:w-[15%]"/>
-       </div>
-       <div className='nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5'>
-       <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Products</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Solution</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Resource</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Developers</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-                <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
-                {/* <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon> */}
-            </div>
-     
+    <nav className='w-full flex py-6 justify-between item-center navbar'>
+      <div className=' flex flex-col h-[10vh] item-center ml-5'>
+        <img src={easylifelogo} alt="easylife" className='w-[150px] h-[100px]' />
+        {/* <p>empowerment for maximum prosperity</p> */}
+        </div>
+        <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+            {navLinks.map((nav, i ) => (
+              <li key={nav.id}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${i===navLinks.length - 1 ? "mr-0" : "mr-10"} text-black`}
+              >
+                  <a href={`${nav.id}`}>
+                      {nav.title}
+                  </a>
+              </li>
+            ))}
+        </ul>
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
+                <div className='w-[28px] h-[28px] object-contain'
+                 onClick={() =>setToggle((prev) => !prev)}
+                > {toggle ? <AiOutlineClose/> : <RxHamburgerMenu/>} </div>
+        </div>
+        <div className={`${toggle ? "flex z-10" : "hidden"} p-6 bg-black-gradient absolute top-20 right-0  my-8 min-w-[100%] h-[70vh] rounded-xl sidebar`}>
+                
+        <ul className='list-none flex flex-col justify-center items-center flex-1'>
+            {navLinks.map((nav, i ) => (
+              <li key={nav.id}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${i===navLinks.length - 1 ? "mr-0" : "mb-4"} text-white`}
+              >
+                  <a href={`${nav.id}`}>
+                      {nav.title}
+                  </a>
+              </li>
+            ))}
+        </ul>
+        </div>
     </nav>
   )
 }
-
 export default Navbar

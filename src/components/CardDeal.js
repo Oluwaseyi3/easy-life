@@ -21,7 +21,7 @@ const CardDeal = () => {
     <section id="product" className={layout.sectionReverse}>
       
   <div className={layout.sectionImgReverse}>
-  <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-10 '>
+  <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-5 '>
      <div className='w-[100%] min-h-[350px] flex flex-col justify-between sm:min-h-[300px]'>
      <div>
        <h1 className=' sm:text-[40px] text-[25px] font-semibold '>Any questions?

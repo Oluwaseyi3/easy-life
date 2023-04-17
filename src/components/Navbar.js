@@ -1,48 +1,82 @@
-import React, {useState} from 'react'
-import {close, logo, menu, easylifelogo} from "../assets"
-import {navLinks} from "../constants"
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { AiOutlineClose } from 'react-icons/ai';
+// import  easylife from "../.";
+import Buttons from "./Buttons";
+import NavLinks from "./NavLinks";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
-    <nav className='w-full flex py-6 justify-between item-center navbar'>
-      <div className=' flex flex-col h-[10vh] item-center ml-5'>
-        <img src={easylifelogo} alt="easylife" className='w-[150px] h-[100px]' />
-        {/* <p>empowerment for maximum prosperity</p> */}
+    <nav className="bg-purple-500 text-white">
+      <div className="flex items-center font-medium justify-around p-4">
+        <div className="z-50 p-0 md:w-auto w-full flex justify-between">
+           <h2 className="text-[25px] mr-10">easylife</h2>
+          <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
+            <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+          </div>
         </div>
-        <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-            {navLinks.map((nav, i ) => (
-              <li key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${i===navLinks.length - 1 ? "mr-0" : "mr-10"} text-black`}
-              >
-                  <a href={`${nav.id}`}>
-                      {nav.title}
-                  </a>
-              </li>
-            ))}
+        <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
+          <li>
+            <a href="/" className="py-7 px-3 inline-block">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/" className="py-7 px-3 inline-block">
+              products
+            </a>
+          </li>
+          <li>
+            <a href="/about" className="py-7 px-3 inline-block">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="/membership" className="py-7 px-3 inline-block">
+             Members
+            </a>
+          </li>
+       
         </ul>
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-                <div className='w-[28px] h-[28px] object-contain'
-                 onClick={() =>setToggle((prev) => !prev)}
-                > {toggle ? <AiOutlineClose/> : <RxHamburgerMenu/>} </div>
+        <div className="md:block hidden">
+          <Buttons title="Register with us" />
         </div>
-        <div className={`${toggle ? "flex z-10" : "hidden"} p-6 bg-black-gradient absolute top-20 right-0  my-8 min-w-[100%] h-[70vh] rounded-xl sidebar`}>
-                
-        <ul className='list-none flex flex-col justify-center items-center flex-1'>
-            {navLinks.map((nav, i ) => (
-              <li key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${i===navLinks.length - 1 ? "mr-0" : "mb-4"} text-white`}
-              >
-                  <a href={`${nav.id}`}>
-                      {nav.title}
-                  </a>
-              </li>
-            ))}
+        {/* Mobile nav */}
+        <ul
+          className={`
+        md:hidden bg-black z-10 fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+        duration-500 ${open ? "left-0" : "left-[-100%]"}
+        `}
+        >
+          <li>
+            <a href="/" className="py-7 px-3 inline-block">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="/" className="py-7 px-3 inline-block">
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="/about" className="py-7 px-3 inline-block">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="/membership" className="py-7 px-3 inline-block">
+              Member
+            </a>
+          </li>
+        
+          <div className="py-5">
+            <Buttons title="Register with us"/>
+          </div>
         </ul>
-        </div>
+      </div>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+
+export default Navbar;

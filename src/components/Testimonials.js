@@ -7,13 +7,13 @@ import FeedbackCard from "./FeedbackCard";
 const Testimonials = () => (
   <div>
     <div className="flex flex-row items-start justify-start  h-[100%] max-w-[100vh] w-[100%] mt-5 sm:text-[34px] text-[20px] font-bold  " >
-          <h2 className="">
+          <h2 className="text-center text-[30px]">
           The services and products that we provide
           </h2>
         </div>
         <section id="clients" className={` ${styles.flexCenter} flex-col relative  `}>
     
-      <div className="flex flex-wrap justify-center sm:justify-between  w-full feedback-container relative z-[1] mb-10">
+      <div className="flex flex-wrap justify-center md:justify-between  w-full feedback-container relative z-[1] mb-1">
         
       {features.map((card) => <FeedbackCard key={card.id} {...card} />)}
     </div>

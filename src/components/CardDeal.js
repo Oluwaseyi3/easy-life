@@ -3,6 +3,7 @@ import { accordions } from '../constants';
 import AccordionItem from './AccordionItem';
 import  {layout} from '../style'
 import Buttons from './Buttons';
+import Outline from './Outline';
 
 const CardDeal = () => {
   const [open, setOpen] =useState(false)
@@ -31,13 +32,13 @@ We got you.</h1>
        <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
      </div>
      <div>
-    <Buttons title="More FAQs"/>
+    <Outline title="More FAQs"/>
      </div>
      </div>
   </div>
   </div>
     <div className={layout.sectionInfo} >
-      <div className='w-[100%] min-h-[350px] flex flex-col gap-5 justify-start  sm:min-h-[200px]'>
+      <div className='w-[100%] min-h-[350px] flex flex-col gap-5 justify-between  sm:min-h-[200px]'>
 
     {
            accordions.map((accordion, index)=> {

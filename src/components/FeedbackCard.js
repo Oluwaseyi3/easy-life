@@ -3,15 +3,15 @@ import {gsap, Elastic, Expo} from "gsap"
 
 
 
-const FeedbackCard = ({content, name, title , icon, cardsRef1, cards2Ref2, cards3Ref3}) => {
+const FeedbackCard = ({content, name, title , icon, cardsRef1, cards2Ref2, cards3Ref3, color}) => {
 
  
   return (
-    <div className='flex   justify-between flex-col rounded border-1   px-5 py-5 rounded-[20px] max-w-[250px] max-h-[100%] md: mr-10 sm:mr-5
+    <div className={`flex text-white ${color}  justify-between flex-col rounded border-1   px-5 py-5 rounded-[20px] max-w-[330px] max-h-[70%] md: mr-5 sm:mr-5
     mr-0 my-5 
-    '>
+    `}>
        <img  src={icon} alt={name} className="w-[48px] h-[48px] rounded-full"/> 
-      <p className='font-poppins min-h-[5vh] text-start font-semibold  font-normal text-[18px] leading-[32px] text-black my-5 ' ref={cardsRef1}>
+      <p className='font-poppins min-h-[5vh] text-start font-semibold  font-normal text-[18px] leading-[32px] text-white my-5 ' ref={cardsRef1}>
         {title}
       </p>
      

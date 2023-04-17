@@ -56,8 +56,8 @@ const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
         </div>
         
     </section>
-     <div className='flex justify-center items-center h-[30vh] '>
-       <h2 className='text-stone-400 font-poppins text-center text-[30px] sm: text-[30px] w-[100%]'>10+ years of Great Services</h2>
+     <div className='flex justify-center items-center h-[50%] '>
+       <h2 className='text-stone-400 py-5 pb-5 font-poppins text-center text-[30px] sm: text-[30px] w-[100%]'>10+ years of Great Services</h2>
      </div>
      <div className='flex justify-center items-center h-[30vh] flex-col w-[100%]'>
        <h2 className='text-grey font-bold text-[50px] font-poppins'>Who we are</h2>

@@ -4,6 +4,7 @@ import styles from './style'
 import {gsap} from "gsap"
 import {  Hero, Navbar, Billing, Business, Buttons, Footer, Stats, Testimonials, CardDeal, FeedbackCard, GetStarted, Clients} from "./components"
 import {  useRef, useLayoutEffect } from 'react'
+import Background from './components/Background'
 
 
 
@@ -147,6 +148,7 @@ useLayoutEffect(() => {
    );
 });
   return (
+    <>
     <div>
     
   
@@ -167,12 +169,18 @@ useLayoutEffect(() => {
         <Stats cardsRefa={cardsRefa} cards2Refb={cards2Refb} cards3Refc={cards3Refc}/>
         <Clients/>
         <CardDeal/>
+       
+   
 
        
 
     </div>
+    
     </div>
+    
       </div>
+       <Background/>
+       </>
   )
 }
 

@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-purple-500 text-white">
+    <nav className="bg-blue-900 text-white">
       <div className="flex items-center font-medium justify-around p-4">
         <div className="z-50 p-0 md:w-auto w-full flex justify-between">
            <h2 className="text-[25px] mr-10">easylife</h2>

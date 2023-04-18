@@ -17,10 +17,10 @@ const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
     <section id="home" className={`flex md:flex-row flex-col `}>
         <div className={`flex-1 ${styles.flexStart} flex-col xl:px:0 sm:px-16 px-6`}>
               <div className='flex flex-col items-start gap-5 py-[10px]  bg-primary rounded-[10px] mb-2'>
-                    <div  className={`box flex flex-row justify-between items center w-full`} >
+                    <div  className={`box flex flex-row justify-between items center w-full max-h-[100%]`} >
                         <h1 ref={boxRef} className='  flex-1 leading-[90px] font-poppins font-semibold ss:text-[62px] text-[42px] text-black leading-[75px]'>
-                        The new age<br />
-                        co-operative <br/>
+                        The new age
+                        co-operative
                         society
                         </h1>
                     </div>
@@ -57,10 +57,10 @@ const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
         
     </section>
      <div className='flex justify-center items-center h-[50%] '>
-       <h2 className='text-stone-400 py-5 pb-5 font-poppins text-center mb-5 text-[30px] sm: text-[30px] w-[100%]'>10+ years of Great Services</h2>
+       <h2 className='text-stone-400 py-5 pb-5 font-poppins text-center md:mb-5 md:mt-5 text-[30px] sm: text-[30px] w-[100%]'>10+ years of Great Services</h2>
      </div>
-     <div className='flex justify-center items-center h-[30vh] flex-col w-[100%]'>
-       <h2 className='text-grey font-bold text-[50px] font-poppins'>Who we are</h2>
+     <div className='flex justify-center items-center h-[100%] flex-col w-[100%]  sm:mt-10'>
+       <h2 className='text-grey text-center font-bold text-[50px] font-poppins'>Who we are</h2>
        <div className='flex flex justify-center items-center '>
          <div className='flex flex-row justify-between w-[100%]'>
          {

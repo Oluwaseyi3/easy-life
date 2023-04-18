@@ -3,6 +3,8 @@ import Buttons from "./Buttons"
 import smile from "../assets/smile.png"
 import  {layout} from '../style'
 import market from "../assets/market.png"
+import mary from "../assets/mary.jpeg"
+
 
 const Clients = ({cardsRefa, cards2Refb, cards3Refc}) => {
   return (
@@ -21,6 +23,9 @@ const Clients = ({cardsRefa, cards2Refb, cards3Refc}) => {
      <div>
        <p>Easylife Agents get to earn commission from their efforts every month</p>
      </div>
+     <div>
+       <img src={mary} alt="" className='max-h-[50vh] w-[70%]'/>
+      </div>
      <div>
     <Buttons title="Get Started"/>
      </div>

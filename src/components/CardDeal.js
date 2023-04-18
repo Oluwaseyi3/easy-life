@@ -19,20 +19,20 @@ const CardDeal = () => {
     
 
     
-    <section id="product" className={layout.sectionReverse}>
+    <section id="product" className={layout.sectionReverse }>
       
   <div className={layout.sectionImgReverse}>
   <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-5 '>
-     <div className='w-[100%] min-h-[350px] flex flex-col justify-between sm:min-h-[300px]'>
+     <div className='w-[100%] min-h-[250px] flex flex-col justify-between sm:min-h-[200px]'>
      <div>
        <h1 className=' sm:text-[40px] text-[25px] font-semibold '>Any questions?
 We got you.</h1>
      </div>
-     <div>
+     {/* <div>
        <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
-     </div>
+     </div> */}
      <div>
-    <Outline title="More FAQs"/>
+    <Outline title="Learn More About Us"/>
      </div>
      </div>
   </div>

@@ -7,6 +7,7 @@ import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.svg";
 import quotes from "./quotes.svg";
+import mary from "./mary.jpeg"
 import joy from "./joy.jpg"
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -40,9 +41,12 @@ import Frame2 from "./Frame2.png"
 import Frame3 from "./Frame3.png"
 import mask from "./mask.png"
 import market from "./market.png"
+import nerve from "./nerve.png"
 export {
   airbnb,
+  nerve,
   market,
+  mary,
   Frame,
   mask,
   Frame4,

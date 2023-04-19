@@ -23,14 +23,14 @@ const CardDeal = () => {
       
   <div className={layout.sectionImgReverse}>
   <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-5 '>
-     <div className='w-[100%] min-h-[250px] flex flex-col justify-between sm:min-h-[200px]'>
+     <div className='w-[100%] h-[200px] flex flex-col justify-between sm:h-[250px]'>
      <div>
        <h1 className=' sm:text-[40px] text-[25px] font-semibold '>Any questions?
 We got you.</h1>
      </div>
-     {/* <div>
-       <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
-     </div> */}
+     <div>
+       <p className='text-[20px]'>Learn more about our company culture, products, services and membership benefits</p>
+     </div>
      <div>
     <Outline title="Learn More About Us"/>
      </div>

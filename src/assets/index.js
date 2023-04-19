@@ -42,8 +42,24 @@ import Frame3 from "./Frame3.png"
 import mask from "./mask.png"
 import market from "./market.png"
 import nerve from "./nerve.png"
+import brook from "./brook.jpg"
+import fam from "./fam.jpg"
+import barca from "./barca.png"
+import spread from "./spread.png"
+import bulb from "./bulb.png"
+import tool from "./tool.png"
+import keys from './keys.png'
+import smile from "./smile.jpg"
 export {
   airbnb,
+  smile,
+  keys,
+  barca,
+  tool,
+  spread,
+  bulb,
+  fam,
+  brook,
   nerve,
   market,
   mary,

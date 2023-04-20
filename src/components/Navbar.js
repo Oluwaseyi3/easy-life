@@ -21,8 +21,8 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/" className="py-7 px-3 inline-block">
-              products
+            <a href="/services" className="py-7 px-3 inline-block">
+              Services
             </a>
           </li>
           <li>

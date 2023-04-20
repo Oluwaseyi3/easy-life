@@ -50,8 +50,18 @@ import bulb from "./bulb.png"
 import tool from "./tool.png"
 import keys from './keys.png'
 import smile from "./smile.jpg"
+import loan from "./loan.webp"
+import change from "./change.gif"
+import credpal from "../assets/credpal.png"
+import community from "../assets/community.jpg"
+import locked from "../assets/locked.webp"
 export {
   airbnb,
+  community,
+  locked,
+  change,
+  credpal,
+  loan,
   smile,
   keys,
   barca,

@@ -7,6 +7,7 @@ import { RouterProvider } from 'react-router';
 import About from "./About"
 import Member from './Member';
 import { Footer, Navbar } from './components';
+import Service from './Service';
 const App = () => {
  
   const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const App = () => {
        <Route index element={<Home/>}/> 
       <Route path="/about" element={<About/>}/>
       <Route path="/membership" element={<Member/>}/>
+      <Route path="/services" element={<Service/>}/>
        </>
     )
    )

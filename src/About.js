@@ -11,8 +11,8 @@ const About = () => {
    <div>
     <AboutSection1/>
     <AboutSection2/>
-    <Vision/>
-    <Mission/>
+    {/* <Vision/>
+    <Mission/> */}
     <Objectives/>
     </div>
   )

@@ -1,14 +1,16 @@
 import React from 'react'
 import  {layout} from '../style'
 import smile from "../assets/smile.png"
+import styles from '../style'
+import divide from "../assets/divide.png"
 
 const AboutSection1 = () => {
   return (
-<section id="product" className={layout.section}>
+<section id="product" className={`${layout.section} bg-black text-white  mt-5`}>
 <div className={layout.sectionImg}>
-            <img src={smile} className="w-[50%]"alt=""/>
+            <img src={divide} className="w-[80%]"alt=""/>
          </div>
-          <div className={layout.sectionInfo} >
+          <div className={`${layout.sectionInfo}  ${styles.paddingX} ${styles.paddingY} `} >
            <div className='flex flex-col gap-3 justify-start'>
           
              <p>

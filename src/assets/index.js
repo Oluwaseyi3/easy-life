@@ -55,8 +55,12 @@ import change from "./change.gif"
 import credpal from "../assets/credpal.png"
 import community from "../assets/community.jpg"
 import locked from "../assets/locked.webp"
+import ajide from '../assets/ajide.jpeg'
+import divide from "../assets/divide.png"
 export {
   airbnb,
+  divide,
+  ajide,
   community,
   locked,
   change,

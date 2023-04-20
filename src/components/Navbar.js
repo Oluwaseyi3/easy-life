@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="bg-blue-900 text-white">
       <div className="flex items-center font-medium justify-around p-4">
         <div className="z-50 p-0 md:w-auto w-full flex justify-between">
-           <h2 className="text-[25px] mr-10">easylife</h2>
+           <h2 className="text-[25px] mr-10">easycoop</h2>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
           </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a href="/" className="py-7 px-3 inline-block">
+            <a href="/services" className="py-7 px-3 inline-block">
               Products
             </a>
           </li>

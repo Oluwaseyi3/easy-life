@@ -1,13 +1,15 @@
 import React from 'react'
 import  {layout} from '../style'
 import smile from "../assets/smile.png"
+import styles from "../style"
+import ajide from "../assets/ajide.jpeg"
 
 const AboutSection1 = () => {
   return (
-<section id="product" className={layout.sectionReverse}>
-          <div className={layout.sectionInfo} >
+<section id="product" className={`${layout.sectionReverse } ${styles.paddingX}  text-black pb-5 ${styles.paddingY}`}>
+          <div className={`${layout.sectionInfo} mt-10`} >
            <div className='flex flex-col gap-3 justify-between'>
-            <div>  <h2 className='text-[30px] font-bold'>10+ years of Super efficient Services…</h2></div>
+            <div>  <h2 className='text-[35px] font-bold'>10+ years of Super efficient Services…</h2></div>
            <div className='mt-5'>
              <p>
              Easylife ventures cooperative society are a team of enthusiastic Entrepreneurs and Business people who understand the value of partnership and networking.
@@ -22,8 +24,9 @@ For as long as money has existed, people have had thoughts and opinions about it
              </div>
            </div>
          </div>
-         <div className={layout.sectionImgReverse}>
-            <img src={smile} className="w-[50%]"alt=""/>
+         <div className={`${layout.sectionImgReverse} w-[100%]   pb-5 mb-3 relative`}>
+            <img src={ajide} className="w-[50%] z-10 rounded-xl h-full relative"alt=""/>
+            {/* <div className='w-[50%] h-full bg-white absolute rounded-xl top-10 right-20 pb-5'/> */}
          </div>
 
          

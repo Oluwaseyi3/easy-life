@@ -52,7 +52,8 @@ const Business = ({cardRef, featureRef}) => {
               Our Vision
                 </h2>
                 <p className={`${styles.paragraph}  mt-5 text-center md:text-left`}>
-                We will empower our members to take bold steps to engage their future so as to build and deliver extraordinary Socio-economic Values that will provide prosperity and fight poverty and ultimately transform the Socio-economic and Socio-political consciousness in our country Nigeria.
+             
+To be the most effective and productive online and offline Cooperative Society in Abuja and Nigeria at large, producing a conducive platform for personal and collective growth for our Members.
   
                 </p>
           

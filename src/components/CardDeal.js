@@ -51,7 +51,7 @@ const CardDeal = () => {
              />
           })
        } */}
-       <Carousel/>
+       {/* <Carousel/> */}
   </div>
   </div>
   

@@ -39,7 +39,7 @@ const CardDeal = () => {
   </div>
     <div className={layout.sectionInfo} >
       <div className='w-[100%] min-h-[350px] flex flex-col gap-5 justify-start  sm:min-h-[200px]'>
-{/* 
+
     {
            accordions.map((accordion, index)=> {
              return <AccordionItem
@@ -50,8 +50,8 @@ const CardDeal = () => {
                 toggle={() => toggle(index)}
              />
           })
-       } */}
-       {/* <Carousel/> */}
+       } 
+     
   </div>
   </div>
   

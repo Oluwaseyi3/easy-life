@@ -26,10 +26,10 @@ const CardDeal = () => {
   <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-5 '>
      <div className='w-[100%] h-[200px] flex flex-col justify-evenly sm:h-[250px]'>
      <div>
-       <h1 className=' sm:text-[40px] text-[35px] font-semibold '>Testimonials</h1>
+       <h1 className=' sm:text-[40px] text-[35px] font-semibold '>Any More Questions?</h1>
      </div>
      <div>
-       <p className='text-[20px]'>Learn more about what our recent users have to say about our services</p>
+       <p className='text-[20px]'>Learn more about our services and savings plan about our services</p>
      </div>
      <div>
     <Outline title=" About Us"/>

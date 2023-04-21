@@ -1,4 +1,4 @@
-import locked from "../assets/locked.webp"
+import credpal from "../assets/credpal.png"
 import { layout } from "../style";
 import styles from "../style";
 
@@ -8,7 +8,7 @@ const Servicelast = () => {
        
         <section className={`${layout.section} w-full pb-10 py-10  gap-5 bg-black  h-[85]  text-white `}>
         <div className={`${layout.sectionImg}  h-50 `} >
-       <img src={locked} alt="" className="h-50 w-[100%]  mt-6 rounded-xl" /> 
+       <img src={credpal} alt="" className="h-50 w-[100%]  mt-6 rounded-xl" /> 
         </div>
         <div className={`${layout.sectionInfo} ${styles.paddingX} gap-7 w-full`} >
              <div className="text-[40px]">

@@ -5,6 +5,7 @@ import {gsap} from "gsap"
 import {  Hero, Navbar, Billing, Business, Buttons, Footer, Stats, Testimonials, CardDeal, FeedbackCard, GetStarted, Clients} from "./components"
 import {  useRef, useLayoutEffect } from 'react'
 import Background from './components/Background'
+import Carousel from './components/Carousel'
 
 
 
@@ -169,6 +170,7 @@ useLayoutEffect(() => {
         <Stats cardsRefa={cardsRefa} cards2Refb={cards2Refb} cards3Refc={cards3Refc}/>
         <Clients/>
         <CardDeal/>
+        {/* <Carousel/> */}
        
    
 

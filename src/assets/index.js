@@ -57,8 +57,19 @@ import community from "../assets/community.jpg"
 import locked from "../assets/locked.webp"
 import ajide from '../assets/ajide.jpeg'
 import divide from "../assets/divide.png"
+import usera from "../assets/usera.jpg"
+import userb from "../assets/userb.jpg"
+import userc from "../assets/userc.jpg"
+import userd from "../assets/userd.jpg"
+import mum from "../assets/mum.jpeg"
 export {
   airbnb,
+  mum,
+  usera,
+  userb,
+  userc,
+  userd,
+
   divide,
   ajide,
   community,

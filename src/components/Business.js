@@ -46,36 +46,34 @@ const Business = ({cardRef, featureRef}) => {
   return ( 
     <section id='features' className={`${layout.section} p-5` }>
           <div  ref={cardRef} className={`${layout.sectionInfo} text-center md:text-left p-5`}>
-            {
-              !matches &&
+        
               <>
-              ( <h2 className={`${styles.heading2} `}>
+             <h2 className={`${styles.heading2} `}>
               Our Vision
                 </h2>
                 <p className={`${styles.paragraph}  mt-5 text-center md:text-left`}>
                 We will empower our members to take bold steps to engage their future so as to build and deliver extraordinary Socio-economic Values that will provide prosperity and fight poverty and ultimately transform the Socio-economic and Socio-political consciousness in our country Nigeria.
   
                 </p>
-              )
+          
               </>
   
-            }
+          
               
           </div>  
-          {
-            !matches &&
+    
             
           <div ref={cardRef} className={`${layout.sectionInfo}  text-center md:text-left p-5`} >
           <h2 className={styles.heading2}>
           Our  mission
           </h2>
-          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          <p className={`${styles.paragraph}  text-center mt-5`}>
           We will empower our members to take bold steps to engage their future so as to build and deliver extraordinary Socio-economic Values that will provide prosperity and fight poverty and ultimately transform the Socio-economic and Socio-political consciousness in our country Nigeria.
 
           </p>
 
       </div>
-          }
+    
 
     </section>
   )

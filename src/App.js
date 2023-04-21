@@ -6,8 +6,9 @@ import Home from './Home'
 import { RouterProvider } from 'react-router';
 import About from "./About"
 import Member from './Member';
-import { Footer, Navbar } from './components';
+import { Footer, Navbar, } from './components';
 import Service from './Service';
+import Register from './Register';
 const App = () => {
  
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const App = () => {
       <Route path="/about" element={<About/>}/>
       <Route path="/membership" element={<Member/>}/>
       <Route path="/services" element={<Service/>}/>
+      <Route path="/register" element={<Register/>}/>
        </>
     )
    )

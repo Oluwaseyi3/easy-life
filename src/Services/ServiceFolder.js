@@ -2,6 +2,7 @@ import { layout } from "../style";
 import styles from "../style";
 import change from "../assets/change.gif"
 import credpal from "../assets/credpal.png"
+import locked from "../assets/locked.webp"
 import Outline from "../components/Outline";
 import Buttons from  "../components/Buttons"
 const ServiceFolder = () => {
@@ -10,7 +11,7 @@ const ServiceFolder = () => {
        
         <section className={`${layout.sectionReverse} w-full pb-10 py-10  gap-5  h-[85]  text-black `}>
         <div className={`${layout.sectionImg}  h-50 `} >
-       <img src={credpal} alt="" className="h-50 w-[100%]  mt-6 rounded-xl" /> 
+       <img src={locked} alt="" className="h-50 w-[100%]  mt-6 rounded-xl" /> 
         </div>
         <div className={`${layout.sectionInfo} ${styles.paddingX} gap-7 w-full`} >
              <div className="text-[40px]">

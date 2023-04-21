@@ -7,10 +7,10 @@ const Servicehome = () => {
         <div>
           <section  className={`${layout.sectionReverse} w-full py-10 h-[85] bg-blue-300 text-white `}>
           <div className={`${layout.sectionInfo} ${styles.paddingX} py-5 rounded-xl gap-10  `} >
-              <div className="text-[35px] font-black font-sans">
+              <div className="text-[30px] font-black font-sans">
               Saving money is one of the essential aspects of building wealth and having a secure financial future. 
               </div>
-              <div className="text-[27px]">
+              <div className="text-[22px]">
               Saving money gives you a way out of the uncertainties of life and provides you with an opportunity to enjoy a quality life
               </div>
           </div>

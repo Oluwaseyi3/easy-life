@@ -37,7 +37,7 @@ const Member2 = () => {
        <div className={`text-center p-7 text-[30px]  ${styles.paddingX }`} ref={imgRef}>
        Over 1000+ Members 
        </div>
-       <div className='w-[100%] flex flex-col md:flex-row p-6 mt-4 items-start justify-center max-h-[70vh] h-[100%] gap-8'>
+       <div className='w-[100%] flex flex-col md:flex-row p-6 mt-4 items-center md:items-start md:justify-center max-h-[70vh] h-[100%] gap-8'>
             <div>
            
             <img src={brook} alt="" className=" w-[30rem] h-[100%] rounded-xl" ref={imgRef}/>

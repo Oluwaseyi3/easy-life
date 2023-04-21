@@ -25,7 +25,7 @@ const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
                         </h1>
                     </div>
                     <div>
-                    <p className= "max-w-[470px] mt-5 text-black font-poppins " ref={subTextRef}>
+                    <p className= "max-w-[470px] text-[25px] mt-5 text-black font-poppins " ref={subTextRef}>
                A new way to Save, Invest, Loan & Grow your Business
               </p>
                     </div>
@@ -37,10 +37,10 @@ const Hero = ({ boxRef, redRef ,imgRef, circleRef, subTextRef}) => {
               </div>
 
               <div>
-                  <img src={People} alt=""/>
+                  <img src={People} className='w-[90%]' alt=""/>
                 </div>
               <div>
-                <p>12,000+ people already joined the easy life cooperative. Get started today!</p>
+                <p className='text-[20px]'>1000+ people already joined the easy life cooperative. Get started today!</p>
               </div>
               </div>
              

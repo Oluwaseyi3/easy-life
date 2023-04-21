@@ -4,6 +4,7 @@ import AccordionItem from './AccordionItem';
 import  {layout} from '../style'
 import Buttons from './Buttons';
 import Outline from './Outline';
+import Carousel from './Carousel';
 
 const CardDeal = () => {
   const [open, setOpen] =useState(false)
@@ -23,23 +24,22 @@ const CardDeal = () => {
       
   <div className={layout.sectionImgReverse}>
   <div  alt="billing" className='w-[100%] min-h-[450px] relative z-[5] p-5 '>
-     <div className='w-[100%] h-[200px] flex flex-col justify-between sm:h-[250px]'>
+     <div className='w-[100%] h-[200px] flex flex-col justify-evenly sm:h-[250px]'>
      <div>
-       <h1 className=' sm:text-[40px] text-[25px] font-semibold '>Any questions?
-We got you.</h1>
+       <h1 className=' sm:text-[40px] text-[35px] font-semibold '>Testimonials</h1>
      </div>
      <div>
-       <p className='text-[20px]'>Learn more about our company culture, products, services and membership benefits</p>
+       <p className='text-[20px]'>Learn more about what our recent users have to say about our services</p>
      </div>
      <div>
-    <Outline title="Learn More About Us"/>
+    <Outline title=" About Us"/>
      </div>
      </div>
   </div>
   </div>
     <div className={layout.sectionInfo} >
-      <div className='w-[100%] min-h-[350px] flex flex-col gap-5 justify-between  sm:min-h-[200px]'>
-
+      <div className='w-[100%] min-h-[350px] flex flex-col gap-5 justify-start  sm:min-h-[200px]'>
+{/* 
     {
            accordions.map((accordion, index)=> {
              return <AccordionItem
@@ -50,7 +50,8 @@ We got you.</h1>
                 toggle={() => toggle(index)}
              />
           })
-       }
+       } */}
+       <Carousel/>
   </div>
   </div>
   
